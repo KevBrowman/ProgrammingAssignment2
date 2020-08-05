@@ -34,33 +34,33 @@ cacheSolve <- function(x, ...) {
   x$setInverse(m)
 }
 
-ma <- matrix(c(2,2,3,-2,1,-2,2,0,2),nrow = 3,ncol = 3)
-z <- makeCacheMatrix(ma)
-cacheSolve(z)
-z$get()
+##ma <- matrix(c(2,2,3,-2,1,-2,2,0,2),nrow = 3,ncol = 3)
+##z <- makeCacheMatrix(ma)
+##cacheSolve(z)
+##z$get()
 
 ##      [,1] [,2] [,3]
 ##[1,]    2   -2    2
 ##[2,]    2    1    0
 ##[3,]    3   -2    2
 
-z$getInverse()
+##z$getInverse()
 ##      [,1] [,2] [,3]
 ##[1,] -1.0    0    1
 ##[2,]  2.0    1   -2
 ##[3,]  3.5    1   -3
 
 
-ma2 <- matrix(c(2,2,3,2),nrow=2,ncol=2)
+##ma2 <- matrix(c(2,2,3,2),nrow=2,ncol=2)
 
-z$set(ma2)
-z$get()
+##z$set(ma2)
+##z$get()
 ##    [,1] [,2]
 ##[1,]    2    3
 ##[2,]    2    2
 
-cacheSolve(z)
-z$getInverse()
+##cacheSolve(z)
+##z$getInverse()
 ##      [,1] [,2]
 ##[1,]   -1  1.5
 ##[2,]    1 -1.0
